@@ -12,7 +12,13 @@ Welcome to the WhoopClient repository! This project is designed to provide an ea
 
 ## Installation ⚙️
 
-To use the WhoopClient, follow these steps:
+You can install WhoopClient using pip:
+
+```bash
+pip install git+https://github.com/harperreed/whoop_client.git
+```
+
+Alternatively, you can clone the repository and install it locally:
 
 1. Clone the repository:
     ```bash
@@ -22,9 +28,9 @@ To use the WhoopClient, follow these steps:
     ```bash
     cd whoop_client
     ```
-3. Install the required dependencies:
+3. Install the package:
     ```bash
-    pip install -r requirements.txt
+    pip install .
     ```
 
 ## Usage 📈
@@ -34,10 +40,21 @@ To utilize the client, you'll need to have your configuration set up.
 1. Create a `config.yaml` file using `config.yaml.example` as a template.
 2. Replace the placeholder values with your actual WHOOP account credentials.
 
-After configuring, you can run the example script `example.py` to authenticate and retrieve data:
+After configuring, you can use the WhoopClient in your Python scripts:
 
-```bash
-python example.py
+```python
+from whoop_client import WhoopClient
+from whoop_client.utils import load_config
+
+# Load configuration
+config = load_config('path/to/your/config.yaml')
+
+# Initialize the WhoopClient
+client = WhoopClient(config)
+
+# Use the client to interact with the WHOOP API
+profile = client.get_profile()
+print(f"User: {profile['first_name']} {profile['last_name']}")
 ```
 
 ## Directory/File Structure 📁
@@ -45,12 +62,13 @@ python example.py
 Here's the directory and file tree of the project:
 
 ```
-whoops/
+whoop_client/
 ├── README.md
+├── setup.py
 ├── config.yaml.example
 ├── example.py
 ├── requirements.txt
-└── whoop_client
+└── whoop_client/
     ├── __init__.py
     ├── auth.py
     ├── data_processing.py
