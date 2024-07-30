@@ -1,6 +1,6 @@
 # WhoopClient 🚀
 
-Welcome to the WhoopClient repository! This project is designed to provide an easy way to interact with the WHOOP API, allowing you to retrieve and process your health and fitness data effortlessly. Whether you're a seasoned developer or just getting started, this project has everything you need to connect with your WHOOP data! 🌟
+Welcome to the WhoopClient repository! This project is designed to provide an easy way to interact with the WHOOP API, enabling effortless retrieval and processing of your health and fitness data. Whether you're a seasoned developer or just getting started, this project has everything you need to connect with your WHOOP data! 🌟
 
 ## Table of Contents 📚
 - [Installation](#installation)
@@ -29,15 +29,15 @@ To use the WhoopClient, follow these steps:
 
 ## Usage 📈
 
-To utilize the client, you'll need to have your configuration set up. 
+To utilize the client, you'll need to have your configuration set up.
 
-1. Create a `config.yaml` file using the `config.yaml.example` as a template. 
+1. Create a `config.yaml` file using `config.yaml.example` as a template.
 2. Replace the placeholder values with your actual WHOOP account credentials.
 
-After configuring, you can run the example script `test.py` to authenticate and retrieve data:
+After configuring, you can run the example script `example.py` to authenticate and retrieve data:
 
 ```bash
-python test.py
+python example.py
 ```
 
 ## Directory/File Structure 📁
@@ -50,7 +50,7 @@ whoops/
 ├── config.yaml
 ├── config.yaml.example
 ├── requirements.txt
-├── test.py
+├── example.py
 └── whoop_client
     ├── __init__.py
     ├── auth.py
@@ -73,7 +73,7 @@ Feel free to customize this file based on your preferences! 🛠️
 
 ## Contributing 🤝
 
-We welcome contributions! If you'd like to contribute to this project, please follow these steps:
+We welcome contributions! If you would like to contribute to this project, please follow these steps:
 
 1. Fork the repository.
 2. Create a new branch:
