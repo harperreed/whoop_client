@@ -47,10 +47,9 @@ Here's the directory and file tree of the project:
 ```
 whoops/
 ├── README.md
-├── config.yaml
 ├── config.yaml.example
-├── requirements.txt
 ├── example.py
+├── requirements.txt
 └── whoop_client
     ├── __init__.py
     ├── auth.py
