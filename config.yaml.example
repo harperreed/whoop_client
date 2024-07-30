@@ -1,0 +1,13 @@
+# WHOOP API Client Configuration
+# Replace the placeholder values with your actual WHOOP account credentials
+
+# Your WHOOP account email address
+username: your_whoop_email@example.com
+
+# Your WHOOP account password
+password: your_whoop_password
+
+# Optional: You can add additional configuration options here in the future
+# For example:
+# api_url: https://api.whoop.com
+# timeout: 30
