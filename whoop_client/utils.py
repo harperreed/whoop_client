@@ -26,6 +26,11 @@ def load_config(config_path: Union[str, Path]) -> WhoopConfig:
 
     return WhoopConfig(**config_data)
 
+def config_from_credentials(username: str, password: str) -> WhoopConfig:
+    if not username or not password:
+        raise ValueError("Username and password cannot be empty")
+    return WhoopConfig(username=username, password=password)
+
 def format_dates(start_date: str | None, end_date: str | None) -> tuple[str, str]:
     end = datetime.combine(
         datetime.fromisoformat(end_date) if end_date else datetime.today(), time.max
